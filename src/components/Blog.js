@@ -25,19 +25,22 @@ class Blog extends React.Component {
     const { posts } = this.state;
     return (
       <div className="blog-list">
-        {posts.map(item => (          
+        <div className="default-container">
+          {posts.map(item => (
             <article className="blog-item" key={item.id}>
-              <h3 className="blog-item__title default-title">{item.title}</h3>
+              <h3 className="blog-item__title default-title">
+                <Link to={`/views/${item.id}`}>{item.title}</Link>
+              </h3>
               <p className="blog-item__description default-paragraph">
                 {item.body}
               </p>
               <div className="blog-item-info">
                 <span className="blog-item-info__author">{item.author}</span>
                 <span className="blog-item-info__date">{item.date}</span>
-              </div>
-              <Link to={`/views/${item.id}`}>{item.title}</Link>
+              </div>              
             </article>
-        ))}
+          ))}
+        </div>        
       </div>
     );
   }

@@ -1,0 +1,46 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.default-container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.default-header {
+  padding: 20px 0;
+}
+
+.default-header-link {
+  display: block;
+}
+
+.default-header-title {
+  text-align: center;
+}
+
+.blog-item {
+  max-width: 480px;
+  margin: 0 auto 20px auto;
+  padding: 16px;
+  border-radius: 4px;
+  border: 1px solid rgba(0,0,0,0.3);
+}
+
+.blog-item__title {
+  display: block;
+  padding: 0;
+  margin: 0 0 12px 0;
+  text-align: left;
+}
+
+.blog-item__description {
+
+}
+
+.blog-item-info {
+
+}

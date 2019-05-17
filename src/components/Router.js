@@ -4,6 +4,10 @@ import Blog from "./Blog";
 import Single from "./Single";
 import Header from "./Header";
 
+import { Provider } from 'react-redux';
+import { ConnectedRouter } from 'connected-react-router';
+import configureStore, { history } from '../configureStore'
+
 
 const Router = () => (
   <BrowserRouter>
